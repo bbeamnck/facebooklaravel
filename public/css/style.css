@@ -1,0 +1,43 @@
+.bs-table{
+    margin:0;
+}
+
+.bs-table thead tr th{
+    color:#fff;
+    background-color: #999;
+}
+
+.bs-product-card{
+    min-height: 320px;
+    /* width: 200px; */
+    text-align: center;
+    position: relative;
+    background: rgba(32, 32, 31, 0.3);
+}
+.bs-product-card img{
+    height: 120px;
+    margin-top: 20px;
+}
+
+.bs-product-card .btn-success{
+    position: absolute;
+    bottom: 15px;
+    width: 85%;
+}
+
+.bs-product-card h4{
+    text-align: left;
+}
+
+.bs-product-card .form-group{
+    text-align: left;
+}
+
+.bs-product-card .form-group strong{
+    font-size: 16px;
+}
+
+.test {
+    background: rgb(0, 153, 204, 0.2);
+    padding: 10px 10px 10px 10px;
+  }
