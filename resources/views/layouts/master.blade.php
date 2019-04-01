@@ -13,6 +13,7 @@
     <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
     <script src="{{asset('vendor/toastr/toastr.min.js')}}"></script>
     <script src="{{ asset('js/angular.min.js')}}"></script>
+    <script src="{{asset('vendor/chartjs/Chart.min.js')}}"></script>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                             <a href="{{ URL::to('product') }}">จัดการข้อมูลสินค้า</a>
                         </li>
                         <li>
-                            <a href="#">รายงาน</a>
+                            <a href="{{ URL::to('chart')}}">รายงาน</a>
                         </li>
                         @endguest
                     </ul>

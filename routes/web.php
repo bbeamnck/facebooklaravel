@@ -34,3 +34,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout' ,'HomeController@logout');
 Route::get('/redirect', 'SocialAuthController@redirect');
 Route::get('/callback', 'SocialAuthController@callback');
+Route::get('/cart/checkout', 'CartController@checkout');
+Route::get('/cart/complete', 'CartController@complete');
+Route::get('/cart/finish', 'CartController@finish_order');
+Route::get('/chart', 'HomeController@view_chart');
