@@ -14,6 +14,7 @@
     <script src="{{asset('vendor/toastr/toastr.min.js')}}"></script>
     <script src="{{ asset('js/angular.min.js')}}"></script>
     <script src="{{asset('vendor/chartjs/Chart.min.js')}}"></script>
+    
 </head>
 
 <body>
@@ -55,8 +56,11 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
+                            <ul class="dropdown-menu">
+                                    <li><a href="{{ route('logout') }}">Logout</a></li>
+                            </ul>
                         </li>
-                        <li><a href="{{ route('logout') }}">Logout</a></li>
+                        
                             @endguest
                     </ul>
                 </div>
